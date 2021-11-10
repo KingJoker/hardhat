@@ -43,6 +43,9 @@ enum NetworkID {
   // Avalanche
   AVALANCHE = 43114,
   AVALANCHE_FUJI_TESTNET = 43113,
+  //Moonriver
+  MOONBASE_ALPHA = 1287,
+  MOONRIVER = 1285
 }
 
 const networkIDtoEndpoints: NetworkMap = {
@@ -122,6 +125,14 @@ const networkIDtoEndpoints: NetworkMap = {
     apiURL: "https://api-testnet.snowtrace.io/api",
     browserURL: "https://testnet.snowtrace.io/",
   },
+  [NetworkID.MOONBASE_ALPHA]: {
+    apiURL: "https://moonbase.moonscan.io/api",
+    browserURL: "https://moonbase.moonscan.io/"
+  },
+  [NetworkID.MOONRIVER]: {
+    apiURL: "https://moonriver.moonscan.io/api",
+    browserURL: "https://moonriver.moonscan.io/"
+  }
 };
 
 export async function getEtherscanEndpoints(
