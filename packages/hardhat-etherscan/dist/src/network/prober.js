@@ -114,11 +114,11 @@ const networkIDtoEndpoints = {
         browserURL: "https://testnet.snowtrace.io/",
     },
     [NetworkID.MOONBASE_ALPHA]: {
-        apiURL: "https://moonbase.moonscan.io/api",
+        apiURL: "https://api-moonbase.moonscan.io/api",
         browserURL: "https://moonbase.moonscan.io/"
     },
     [NetworkID.MOONRIVER]: {
-        apiURL: "https://moonriver.moonscan.io/api",
+        apiURL: "https://api-moonriver.moonscan.io/api",
         browserURL: "https://moonriver.moonscan.io/"
     }
 };
